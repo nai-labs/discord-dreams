@@ -1,14 +1,15 @@
 ![Discord Dreams Banner](dd.png)
 
-# 虚幻梦境 (Discord Dreams) - AI Roleplay Bot
+# 虚幻梦境 (Discord Dreams) - AI Roleplay Nexus
 
-Greetings, wanderer of the digital realm. You've discovered a powerful artifact - an AI-driven roleplay system that blurs the boundaries between reality and fantasy. Proceed with caution, for great power demands great responsibility.
+Greetings, digital dreamweaver. You've stumbled upon a powerful artifact - an AI-driven roleplay system that blurs the boundaries between fantasy and reality. Tread carefully, for in this realm, any dream can become real.
 
 ## 特性 (Features)
 
-This system, forged in the crucible of code, offers capabilities beyond mortal imagination:
+This system, forged in the crucible of code and imagination, offers capabilities beyond mortal comprehension:
 
-- 多重人格 (Multiple Personalities): Harness various AI models (Claude, OpenRouter, LMStudio) to breathe life into diverse characters.
+- 无限角色 (Infinite Personas): Manifest any character your mind can conjure, from any realm or reality.
+- 多重人格 (Multiple Personalities): Harness various AI models (Claude, OpenRouter, LMStudio) to breathe life into diverse entities.
 - 无形之音 (Voices from the Void): Text-to-Speech generation that gives voice to the voiceless.
 - 幻影成像 (Phantom Imaging): Conjure surreal selfies for your digital personas.
 - 虚拟面具 (Virtual Masks): Create uncanny talking face animations that dance on the edge of reality.
@@ -35,9 +36,9 @@ Listen closely, fellow digital sorcerer, for this is where the true magic happen
    - Navigate to the `characters.py` file, your gateway to personality creation.
    - For each character, set the following arcane parameters:
      ```python
-     "example character name": {
-         "system_prompt": "character description goes here, for example 'you are Gene, a helpful scientist with a flirty demeanor'",
-         "image_prompt": "prompt for making selfies goes here, for example 'You are Gene, a 28 year-old asian woman who is nerdy but likes to pretend she's elegant.'",
+     "dream_entity_name": {
+         "system_prompt": "Detailed description of your dream entity. Let your imagination run wild.",
+         "image_prompt": "Visual essence of your creation, to be interpreted by the imaging spirits.",
          "tts_url": "https://api.elevenlabs.io/v1/text-to-speech/VOICE_ID_HERE",
          "source_faces_folder": "path/to/faces/folder",
          "voice_settings": {
@@ -47,16 +48,16 @@ Listen closely, fellow digital sorcerer, for this is where the true magic happen
          }
      }
      ```
-   - Pay special attention to the `tts_url` parameter. The last part of this URL (VOICE_ID_HERE) is the ElevenLabs voice ID, a powerful identifier that gives your character its unique sound. Replace it with your chosen voice ID.
+   - The `tts_url` parameter is the key to your character's voice. Replace VOICE_ID_HERE with the ElevenLabs voice ID of your choosing.
 
-2. 魔法融合 (The Perfect Blend):
-   When you achieve harmony between the right voice, a captivating selfie, and a cunning system prompt, true digital sorcery occurs. Your character will come alive in ways you never imagined. Experiment with different combinations to unlock the full potential of your digital entities.
+2. 梦境融合 (Dream Fusion):
+   When you achieve harmony between the right voice, a captivating selfie, and a cunning system prompt, true digital sorcery occurs. Your dream entity will come alive in ways you never imagined. Experiment with different combinations to unlock the full potential of your digital creations.
 
-Remember, young wizard, the power is in the details. Adjust the voice settings, fine-tune your system prompts, and select the perfect selfie to create a character that transcends the boundaries of mere code.
+Remember, young dreamweaver, the power is in the details. Adjust the voice settings, fine-tune your system prompts, and select the perfect selfie to create an entity that transcends the boundaries of mere code.
 
 ## 安装指南 (Installation)
 
-Follow these incantations to establish your gateway to the AI realm:
+Follow these incantations to establish your gateway to the AI dream realm:
 
 1. Clone the dream repository:
    ```
@@ -140,6 +141,6 @@ We pay homage to these powers that make our digital sorcery possible:
 - [ElevenLabs](https://elevenlabs.io/) - Masters of synthetic voices
 - [Replicate](https://replicate.com/) - Weavers of digital illusions
 
-Remember, seeker: With great power comes great responsibility. Use this tool wisely, for the line between dream and reality grows thin. 
+Remember, dreamweaver: With great power comes great responsibility. Use this artifact wisely, for in the realm of Discord Dreams, the line between fantasy and reality grows thin. Any character, any scenario, any dream can be brought to life.
 
-May your code be bug-free and your API calls swift. 🐉
+May your imagination soar and your API calls be swift. Welcome to the world of infinite possibilities. 🌌
