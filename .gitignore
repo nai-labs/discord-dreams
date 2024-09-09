@@ -34,6 +34,7 @@ Thumbs.db
 *.key
 *.pem
 .env
+characters.py
 
 # Dependency directories
 node_modules/
