@@ -1,3 +1,5 @@
+![DiscordDreams Banner](banner.png)
+
 # Discord Dreams - AI Roleplay Bot
 
 So, you want to make an AI roleplay bot for Discord? Here's one. It's called Discord Dreams. It does stuff.
