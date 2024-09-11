@@ -1,4 +1,4 @@
-![DiscordDreams Banner](banner.png)
+![Discord Dreams Banner](dd.png)
 
 # Discord Dreams - AI Roleplay Bot
 
@@ -110,7 +110,5 @@ Here's what you need. Don't blame me if you can't figure it out:
 ## Contributing
 
 If you want to contribute, go ahead. Just don't break anything.
-
-
 
 That's it. Have fun with your AI roleplay bot, I guess.
