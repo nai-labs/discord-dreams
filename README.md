@@ -51,7 +51,9 @@ Use these one-click installers to set up Discord Dreams:
 
 3. Follow the prompts to enter your API keys and other required information.
 
-4. Once the installation is complete, follow the instructions provided by the installer to run the bot.
+4. The installer will create a `characters.py` file based on the `characters_example.py` template. You'll need to edit this file to add your own characters.
+
+5. Once the installation is complete, follow the instructions provided by the installer to run the bot.
 
 ### Manual Installation
 
@@ -88,10 +90,16 @@ If you're feeling adventurous or the one-click installers don't work for you, he
      DEFAULT_LLM=anthropic
      ```
 
+5. Copy `characters_example.py` to `characters.py`:
+   ```
+   cp characters_example.py characters.py
+   ```
+
 ## Character Setup
 
-1. Find `characters.py`. Edit it.
-2. Set up characters like this:
+1. Open `characters.py` in your favorite text editor. You'll see an example character setup.
+
+2. Customize the example character or add new characters following this format:
 
    ```python
    "character_name": {
@@ -109,32 +117,7 @@ If you're feeling adventurous or the one-click installers don't work for you, he
 
 3. Replace VOICE_ID_HERE with an ElevenLabs voice ID. Try not to pick something too annoying.
 
-## Manual Installation
-
-1. Clone the repo:
-   ```
-   git clone https://github.com/nai-research/discord-dreams.git
-   cd discord-dreams
-   ```
-
-2. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-
-3. Set up your config:
-   - Make a `.env` file in the root directory
-   - Put your API keys and stuff in it:
-     ```
-     DISCORD_BOT_TOKEN=your_discord_bot_token
-     DISCORD_USER_ID=your_discord_user_id
-     OPENROUTER_KEY=your_openrouter_api_key
-     OPENROUTER_HTTP_REFERER=your_openrouter_http_referer
-     ANTHROPIC_API_KEY=your_anthropic_api_key
-     ELEVENLABS_API_KEY=your_elevenlabs_api_key
-     REPLICATE_API_TOKEN=your_replicate_api_token
-     DEFAULT_LLM=anthropic
-     ```
+4. Add as many characters as you want. Just don't go overboard, okay?
 
 ## Usage
 
@@ -174,4 +157,4 @@ If you're feeling adventurous or the one-click installers don't work for you, he
 
 If you want to contribute, go ahead. Just don't break anything.
 
-That's it. Have fun with your AI roleplay bot, I guess.# Test change
+That's it. Have fun with your AI roleplay bot, I guess.

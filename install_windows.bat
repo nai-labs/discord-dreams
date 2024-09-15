@@ -37,10 +37,14 @@ echo REPLICATE_API_TOKEN=%replicate_token%
 echo DEFAULT_LLM=anthropic
 ) > .env
 
+REM Copy characters_example.py to characters.py
+copy characters_example.py characters.py
+
 echo.
 echo Installation complete! To run Discord Dreams, follow these steps:
 echo 1. Activate the virtual environment: venv\Scripts\activate.bat
-echo 2. Run the bot: python main.py
+echo 2. Edit characters.py to add your own characters
+echo 3. Run the bot: python main.py
 echo.
 echo Open Discord, and enjoy using Discord Dreams!
 

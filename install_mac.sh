@@ -38,9 +38,13 @@ REPLICATE_API_TOKEN=${replicate_token}
 DEFAULT_LLM=anthropic
 EOL
 
+# Copy characters_example.py to characters.py
+cp characters_example.py characters.py
+
 echo ""
 echo "Installation complete! To run Discord Dreams, follow these steps:"
 echo "1. Activate the virtual environment: source venv/bin/activate"
-echo "2. Run the bot: python main.py"
+echo "2. Edit characters.py to add your own characters"
+echo "3. Run the bot: python main.py"
 echo ""
 echo "Open Discord, and enjoy using Discord Dreams!"
