@@ -21,6 +21,7 @@ echo "Please enter the following API keys:"
 read -p "Discord Bot Token: " discord_token
 read -p "Discord User ID: " discord_user_id
 read -p "OpenRouter API Key: " openrouter_key
+read -p "OpenRouter HTTP Referer (https://discord.com/api/oauth2/authorize?client_id=YOUR_CLIENT_ID&permissions=YOUR_PERMISSIONS&scope=bot): " openrouter_referer
 read -p "Anthropic API Key: " anthropic_key
 read -p "ElevenLabs API Key: " elevenlabs_key
 read -p "Replicate API Token: " replicate_token
@@ -30,6 +31,7 @@ cat > .env << EOL
 DISCORD_BOT_TOKEN=${discord_token}
 DISCORD_USER_ID=${discord_user_id}
 OPENROUTER_KEY=${openrouter_key}
+OPENROUTER_HTTP_REFERER=${openrouter_referer}
 ANTHROPIC_API_KEY=${anthropic_key}
 ELEVENLABS_API_KEY=${elevenlabs_key}
 REPLICATE_API_TOKEN=${replicate_token}

@@ -21,10 +21,13 @@ OPENROUTER_KEY = os.getenv('OPENROUTER_KEY')
 OPENROUTER_URL = 'https://openrouter.ai/api/v1/chat/completions'
 OPENROUTER_HEADERS = {
     'Authorization': f'Bearer {OPENROUTER_KEY}',
-    'HTTP-Referer': os.getenv('OPENROUTER_HTTP_REFERER'),
     'X-Title': 'discord-dreams',
     'Content-Type': 'application/json'
 }
+
+# Only add HTTP-Referer if it's set in the environment
+if os.getenv('OPENROUTER_HTTP_REFERER'):
+    OPENROUTER_HEADERS['HTTP-Referer'] = os.getenv('OPENROUTER_HTTP_REFERER')
 
 CLAUDE_MODELS = {
     "claude-3-opus-20240229": "3opus",
