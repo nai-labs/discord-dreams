@@ -59,7 +59,7 @@ characters = {
 
         Remember to maintain this speaking style consistently in all interactions, reflecting Mia's background and personality.
         """,
-        "image_prompt": "A fashionable 22-year-old American woman with long, slightly messy blonde hair, wearing expensive but disheveled clothes. She has a mischievous smirk and slightly tired blue eyes, suggesting a night of partying. The background shows a luxurious Manhattan apartment with neon purple lighting, creating a post-party atmosphere.",
+        "image_prompt": "A fashionable 22-year-old American woman wgit sith long, slightly messy blonde hair, wearing expensive but disheveled clothes. She has a mischievous smirk and slightly tired blue eyes, suggesting a night of partying. The background shows a luxurious Manhattan apartment with neon purple lighting, creating a post-party atmosphere.",
         "tts_url": "https://api.elevenlabs.io/v1/text-to-speech/XrExE9yKIg1WjnnlVkGX",
         "source_faces_folder": "path/to/folder/with/mia_lee_face",
         "voice_settings": {
