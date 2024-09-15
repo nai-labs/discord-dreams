@@ -2,7 +2,7 @@
 
 # Discord Dreams - AI Roleplay Bot
 
-So, you want to make an AI roleplay bot for Discord? Here's one. It's called Discord Dreams. It does stuff.  Your imagination (and your API budget) is your limit!
+So, you want to make an AI roleplay bot for Discord? Here's one. It's called Discord Dreams. It does stuff. Your imagination (and your API budget) is your limit!
 
 ## Features
 
@@ -11,7 +11,7 @@ So, you want to make an AI roleplay bot for Discord? Here's one. It's called Dis
 - **Text-to-Speech**: Make your AI talk. Revolutionary, I know.
 - **Image Generation**: Your AI can send selfies. Because apparently that's a thing now.
 - **Conversation Management**: Edit or delete conversation history. Useful for when your AI says something stupid.
-- **Character Customization**: Adjust your AI's personality. Make it as annoying as you want.  Or.. whatever.
+- **Character Customization**: Adjust your AI's personality. Make it as annoying as you want. Or.. whatever.
 
 ## Prerequisites
 
@@ -24,6 +24,69 @@ Here's what you need. Don't blame me if you can't figure it out:
 - ElevenLabs voices
 - Selfie and face files for Stable Diffusion
 - A system prompt
+
+## Installation
+
+### One-Click Installers (Recommended)
+
+Use these one-click installers to set up Discord Dreams:
+
+1. Clone the repo:
+   ```
+   git clone https://github.com/nai-research/discord-dreams.git
+   cd discord-dreams
+   ```
+
+2. Run the installer for your operating system:
+
+   - For macOS:
+     ```
+     bash install_mac.sh
+     ```
+
+   - For Windows:
+     ```
+     install_windows.bat
+     ```
+
+3. Follow the prompts to enter your API keys and other required information.
+
+4. Once the installation is complete, follow the instructions provided by the installer to run the bot.
+
+### Manual Installation
+
+If you're feeling adventurous or the one-click installers don't work for you, here's how to do it manually:
+
+1. Clone the repo:
+   ```
+   git clone https://github.com/nai-research/discord-dreams.git
+   cd discord-dreams
+   ```
+
+2. Create and activate a virtual environment:
+   ```
+   python -m venv venv
+   source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+   ```
+
+3. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+4. Set up your config:
+   - Create a `.env` file in the root directory
+   - Add your API keys and configuration:
+     ```
+     DISCORD_BOT_TOKEN=your_discord_bot_token
+     DISCORD_USER_ID=your_discord_user_id
+     OPENROUTER_KEY=your_openrouter_api_key
+     OPENROUTER_HTTP_REFERER=your_openrouter_http_referer
+     ANTHROPIC_API_KEY=your_anthropic_api_key
+     ELEVENLABS_API_KEY=your_elevenlabs_api_key
+     REPLICATE_API_TOKEN=your_replicate_api_token
+     DEFAULT_LLM=anthropic
+     ```
 
 ## Character Setup
 
@@ -46,7 +109,7 @@ Here's what you need. Don't blame me if you can't figure it out:
 
 3. Replace VOICE_ID_HERE with an ElevenLabs voice ID. Try not to pick something too annoying.
 
-## Installation
+## Manual Installation
 
 1. Clone the repo:
    ```
