@@ -12,6 +12,7 @@ So, you want to make an AI roleplay bot for Discord? Here's one. It's called Dis
 - **Image Generation**: Your AI can send selfies. Because apparently that's a thing now.
 - **Conversation Management**: Edit or delete conversation history. Useful for when your AI says something stupid.
 - **Character Customization**: Adjust your AI's personality. Make it as annoying as you want. Or.. whatever.
+- **Organized Output**: All conversation logs and generated content are neatly organized in an 'output' folder. Because who doesn't love a tidy bot?
 
 ## Prerequisites
 
@@ -95,6 +96,11 @@ If you're feeling adventurous or the one-click installers don't work for you, he
    cp characters_example.py characters.py
    ```
 
+6. Create an 'output' folder in the project root:
+   ```
+   mkdir output
+   ```
+
 ## Character Setup
 
 1. Open `characters.py` in your favorite text editor. You'll see an example character setup.
@@ -143,6 +149,33 @@ If you're feeling adventurous or the one-click installers don't work for you, he
    - `!restart` - Restart the bot
    - `!quit` - Stop the bot
 
+## Output Organization
+
+All conversation logs and generated content are now neatly organized in an 'output' folder. Here's how it works:
+
+1. When you start a new conversation, you'll be prompted to enter a name for the log file.
+2. A new subfolder will be created in the 'output' folder with the given name.
+3. All files related to that conversation (logs, audio, images, videos) will be saved in this subfolder.
+4. To resume a conversation, use the `!resume` command followed by the subfolder name.
+
+Example folder structure:
+```
+project_root/
+├── output/
+│   ├── conversation_1/
+│   │   ├── conversation_1.txt
+│   │   ├── audio_files.mp3
+│   │   └── image_files.png
+│   ├── conversation_2/
+│   │   └── ...
+│   └── ...
+├── main.py
+├── conversation_manager.py
+└── ...
+```
+
+This new structure keeps your project tidy and makes it easier to manage multiple conversations. You're welcome.
+
 ## Technical Details
 
 - Uses Discord.py
@@ -152,6 +185,7 @@ If you're feeling adventurous or the one-click installers don't work for you, he
 - Multiple AI model support
 - Video generation with Replicate's API
 - Environment variables for configuration
+- Organized output structure for logs and generated content
 
 ## Contributing
 

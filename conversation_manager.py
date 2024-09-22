@@ -14,6 +14,9 @@ class ConversationManager:
         self.log_file_name_response = None
         self.last_audio_path = None
         self.last_selfie_path = None
+        self.output_folder = os.path.join(os.getcwd(), 'output')
+        if not os.path.exists(self.output_folder):
+            os.makedirs(self.output_folder)
 
     def add_user_message(self, message):
         if message != self.log_file_name_response:
@@ -51,11 +54,11 @@ class ConversationManager:
             log_file_name = "latest_session"
         
         subfolder_name = log_file_name
-        self.subfolder_path = os.path.join(os.getcwd(), subfolder_name)
+        self.subfolder_path = os.path.join(self.output_folder, subfolder_name)
         counter = 1
         while os.path.exists(self.subfolder_path):
             subfolder_name = f"{log_file_name}_{counter}"
-            self.subfolder_path = os.path.join(os.getcwd(), subfolder_name)
+            self.subfolder_path = os.path.join(self.output_folder, subfolder_name)
             counter += 1
         os.makedirs(self.subfolder_path)
         
@@ -69,10 +72,11 @@ class ConversationManager:
                 file.write(f"[{timestamp}] **{role}**: {message}\n")
 
     def resume_conversation(self, directory_path):
-        if os.path.exists(directory_path):
-            log_files = [f for f in os.listdir(directory_path) if f.endswith(".txt")]
+        full_directory_path = os.path.join(self.output_folder, directory_path)
+        if os.path.exists(full_directory_path):
+            log_files = [f for f in os.listdir(full_directory_path) if f.endswith(".txt")]
             if log_files:
-                log_file_path = os.path.join(directory_path, log_files[0])
+                log_file_path = os.path.join(full_directory_path, log_files[0])
                 with open(log_file_path, 'r', encoding='utf-8') as file:
                     log_content = file.read()
 
@@ -84,7 +88,7 @@ class ConversationManager:
                     self.conversation.append({"role": "user", "content": user_msg})
                     self.conversation.append({"role": "assistant", "content": bot_msg})
 
-                self.subfolder_path = directory_path
+                self.subfolder_path = full_directory_path
                 self.log_file = log_file_path
 
                 return True
