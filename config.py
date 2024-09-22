@@ -60,7 +60,8 @@ OPENROUTER_MODELS = {
     "meta-llama/llama-3.1-405b-instruct": "405",
     "nothingiisreal/mn-celeste-12b": "celeste",
     "ai21/jamba-1-5-large": "jamba",
-    "mistralai/mistral-large": "mistral-l2"
+    "mistralai/mistral-large": "mistral-l2",
+    "qwen/qwen-2.5-72b-instruct": "qwen"
 }
 OPENROUTER_MODEL = list(OPENROUTER_MODELS.keys())[0]
 OPENROUTER_TEMPERATURE = 0.7
